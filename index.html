@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="tabs">
+            <button class="tab-c tab" data-tab="tab-1">Calculator</button>
+            <button class="tab-h tab" data-tab="tab-2">History</button>
+        </div>
+        <div class="calculator"> 
+            <div id="tab-1" class="operations content"> 
+                <div class="screen">
+                    <textarea id="input"  placeholder="0"></textarea>
+                </div>
+                <div class="result">
+                    <output id="output"></output>
+                </div> 
+                <div class="buttons">
+                    <!-- First row -->
+                     <button data-number="(" class="rest-btn btn">(</button>
+                     <button data-number=")" class="rest-btn btn">)</button>
+                     <button data-number="C" id="cancel" class="clear-btn btn">C</button>
+                     <button data-number="DEL" id="delete" class="delete-btn btn">DEL</button>
+                     <button data-number="/" class="operation-btn btn">/</button>
+                     <button data-number="^2" class="rest-btn btn">^2</button>
+                    <!-- Second row -->
+                     <button data-number="%" class="rest-btn btn">%</button>
+                     <button data-number="7" class="dgt-btn btn">7</button>
+                     <button data-number="8" class="dgt-btn btn">8</button>
+                     <button data-number="9" class="dgt-btn btn">9</button>
+                     <button data-number="*" class="operation-btn btn">x</button>
+                     <button data-number="^3" class="rest-btn btn">^3</button>
+                    <!-- Third row -->
+                     <button data-number="sin(" class="rest-btn btn">sin</button>
+                     <button data-number="4" class="dgt-btn btn">4</button>
+                     <button data-number="5" class="dgt-btn btn">5</button>
+                     <button data-number="6" class="dgt-btn btn">6</button>
+                     <button data-number="-" class="operation-btn btn">-</button>
+                     <button data-number="√(" class="rest-btn btn">√</button>
+                    <!-- Fourth row -->
+                     <button data-number="cos(" class="rest-btn btn">cos</button>
+                     <button data-number="1" class="dgt-btn btn">1</button>
+                     <button data-number="2" class="dgt-btn btn">2</button>
+                     <button data-number="3" class="dgt-btn btn">3</button>
+                     <button data-number="+" class="operation-btn btn">+</button>
+                     <button data-number="∛(" class="rest-btn btn">∛</button>
+                    <!-- Fifth row -->
+                     <button data-number="tan(" class="rest-btn btn">tan</button>
+                     <button data-number="0" id="zero" class="dgt-btn btn">0</button>
+                     <button data-number="." class="dgt-btn btn">.</button>
+                     <button data-number="=" id="equal" class="operation-btn btn">=</button>
+                </div>
+            
+            </div>
+            <div id="tab-2" class="history content"></div>
+        </div>  
+    </div>
+
+    
+    <script src="tabs.js"></script>
+    <script src ="script.js"></script>
+</body>
+</html>
