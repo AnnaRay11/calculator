@@ -1,7 +1,7 @@
 # calculator
 
 A responsive calculator built with HTML, CSS, and JavaScript.
-Features
+Features:
 
 Basic arithmetic operations (addition, subtraction, multiplication, division)
 Advanced operations (sin, cos, tan, square root, cube root, powers)
@@ -10,8 +10,12 @@ Calculation history
 Responsive design — works on desktop, tablet, and mobile
 Keyboard input support
 
-Technologies
-
+Technologies:
 HTML
 CSS
 JavaScript
+
+Live Demo:
+https://annaray11.github.io/calculator/
+
+
